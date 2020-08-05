@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/5e1f83ae17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="d-flex flex-column min-vh-100">
+    {{>header}}
+      <div class="container flex-grow-1">
+        <form class="search-form">
+          <div class="row">
+            <div class="col-md-8">
+            <input type="text" class="form-control search-input">
+            </div>
+            <div class="col-md-4">
+            <button class="btn btn-primary search-btn">Submit</button>
+            </div>
+          </div>
+        </form>
+        <div class="card-deck p-5">
+          <div class="card">
+            <div class="card-body">
+              <p id="message-1">location</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <p id="message-2">weather</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{>footer}}
+    </div>
+    {{>scripts}}
+  </body>
+</html>
