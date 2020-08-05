@@ -15,6 +15,7 @@ const getWeather = (latitude, longitude, callback) => {
           description: current.weather_descriptions[0],
           temperature: current.temperature,
           feelsLike: current.feelslike,
+          weatherIcon: current.weather_icons[0],
         });
       } else if (data.error) {
         callback(data.error.type, undefined);
