@@ -28,7 +28,7 @@ if (elements.searchForm) {
           elements.locationText.textContent = `${data.error}`;
           elements.weatherText.textContent = `${data.error}`;
         } else {
-          const markup = `<img class= "card-title" src="${data.weather.weatherIcon}" alt="weather icon" id="icon-1">`;
+          const markup = `<img class= "col-md-4" style="max-height: 100px; max-width:100px;"src="${data.weather.weatherIcon}" alt="weather icon" id="icon-1">`;
           elements.weatherCard.insertAdjacentHTML('afterbegin', markup);
           elements.locationText.textContent = `${data.location}`;
           elements.weatherText.textContent = `It is ${data.weather.description}. Current temperature is ${data.weather.temperature} celcius and it feels like ${data.weather.feelsLike} celcius.`;
